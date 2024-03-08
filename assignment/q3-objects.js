@@ -16,7 +16,11 @@ const bookTitle = ["Lord of the Rings", "Programming for Dummies", "Introduction
 let booksObj = {}; 
 
 function convert(keyArr, valueArr){
-    
+    var result={};
+    for (i=0; i<keyArr.length; i++){
+        result[keyArr[i]]=valueArr[i];
+    }
+    return result;
     // Add code here
     /*
         Tips:
